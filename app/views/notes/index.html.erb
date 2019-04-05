@@ -17,7 +17,7 @@
       <tr>
         <td><%= note.authorisation_id %></td>
         <td><%= note.person_id %></td>
-        <td><%= note.message %></td>
+        <td><%= note.content %></td>
         <td><%= link_to 'Show', note %></td>
         <td><%= link_to 'Edit', edit_note_path(note) %></td>
         <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,3 +29,8 @@
 <br>
 
 <%= link_to 'New Note', new_note_path %>
+
+<hr>
+
+
+<%= link_to 'SPA', spa_path %>
